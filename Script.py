@@ -3,13 +3,13 @@ class script(object):
 <b>My Name is <a href='https://t.me/Filter_free_bot'>Samantha</a>, \n𝙸 can provide movies in your Group, \nJust add me to your group and i will do my work 😜.....</b>"""
     HELP_TXT = """Hei 🐳 {}
 <b>Here is the help for my COMMANDs.</b>"""
-    ABOUT_TXT = """✯<b> MY NAME: {}</b>
-✯<b> CREATOR: <a href=https://t.me/rahulp_r>This Person</a> </b>
-✯<b> LIBRARY: PYROGRAM</b>
-✯<b> LANGUAGE: PYTHON 3</b>
-✯<b> DATA BASE: MONGODB</b>
-✯<b> BOT SERVER: HEROKU</b>
-✯<b> BUILD STATUS: v1.0.1 [ BETA ]</b>"""
+    ABOUT_TXT = """✯ MY NAME    : {}
+✯ CREATOR      : <a href=https://t.me/rahulp_r>This Person</a> 
+✯ LIBRARY      : PYROGRAM
+✯ LANGUAGE     : PYTHON 3
+✯ DATA BASE    : MONGODB
+✯ BOT SERVER   : HEROKU
+✯ BUILD STATUS : v1.0.1 [ BETA ]"""
     SOURCE_TXT = """<b>NOTE:</b>
 - Eva Maria is a open source project. 
 - Source - https://github.com/EvamariaTG/EvaMaria  
