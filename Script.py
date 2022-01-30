@@ -3,25 +3,25 @@ class script(object):
 <b>My Name is <a href='https://t.me/Filter_free_bot'>Samantha</a>, \n𝙸 can provide movies in your Group, \nJust add me to your group and i will do my work 😜.....</b>"""
     HELP_TXT = """Hei 🐳 {}
 <b>Here is the help for my COMMANDs.</b>"""
-    ABOUT_TXT = """✯ MY NAME    : {}
-✯ CREATOR      : <a href=https://t.me/rahulp_r>This Person</a> 
-✯ LIBRARY      : PYROGRAM
-✯ LANGUAGE     : PYTHON 3
-✯ DATA BASE    : MONGODB
-✯ BOT SERVER   : HEROKU
-✯ BUILD STATUS : v1.0.1 [ BETA ]"""
+    ABOUT_TXT = """✯ <b>My Name: Samantha </b>
+✯ <b>Creator: <a href='https://t.me/rahulp_r'>This Person</a> </b> 
+✯ <b>Library: Pyrogram</b>
+✯ <b>Language: Python 3</b>
+✯ <b>Data Base: MONOGO DB</b>
+✯ <b>Server: HEROKU</b>
+✯ <b>Build Status: v1.0.1 [BETA]</b>"""
     SOURCE_TXT = """<b>NOTE:</b>
-- Eva Maria is a open source project. 
-- Source - https://github.com/EvamariaTG/EvaMaria  
+- Samantha is not a open source project. 
+- It will be open soon \n - Join @CP_Archivedmovies to be updated. 
 
 <b>DEVS:</b>
-- <a href=https://t.me/TeamEvamaria>Team Eva Maria</a>"""
+- <a href=https://t.me/rahulp_r>This Person</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
-- Filter is the feature were users can set automated replies for a particular keyword and EvaMaria will respond whenever a keyword is found the message
+- Filter is the feature were users can set automated replies for a particular keyword and Samantha will respond whenever a keyword is found in the message.... 
 
 <b>NOTE:</b>
-1. eva maria should have admin privillage.
+1. Samantha should have admin privillage.
 2. only admins can add filters in a chat.
 3. alert buttons have a limit of 64 characters.
 
@@ -32,11 +32,11 @@ class script(object):
 • /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
     BUTTON_TXT = """Help: <b>Buttons</b>
 
-- Eva Maria Supports both url and alert inline buttons.
+- Samantha Supports both url and alert inline buttons.
 
 <b>NOTE:</b>
 1. Telegram will not allows you to send buttons without any content, so content is mandatory.
-2. Eva Maria supports buttons with any telegram media type.
+2. Samantha supports buttons with any telegram media type.
 3. Buttons should be properly parsed as markdown format
 
 <b>URL buttons:</b>
