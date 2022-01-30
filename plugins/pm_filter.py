@@ -41,7 +41,7 @@ async def give_filter(client, message):
 async def next_page(bot, query):
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
-        return await query.answer("oKda", show_alert=True)
+        return await query.answer("എന്റെ മോനെ ഇത് നിനക്ക് ഉള്ളത് അല്ല🤭....", show_alert=True)
     try:
         offset = int(offset)
     except:
@@ -120,7 +120,7 @@ async def next_page(bot, query):
 async def advantage_spoll_choker(bot, query):
     _, user, movie_ = query.data.split('#')
     if int(user) != 0 and query.from_user.id != int(user):
-        return await query.answer("okDa", show_alert=True)
+        return await query.answer("എന്റെ മോനെ ഇത് നിനക്ക് ഉള്ളത് അല്ല🤭....", show_alert=True)
     if movie_ == "close_spellcheck":
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.message_id)
@@ -135,7 +135,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('This Movie Not Found In DataBase')
+            k = await query.message.edit('This Movie Not Found In DataBase 🤐')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -215,8 +215,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         keyboard = InlineKeyboardMarkup([
             [InlineKeyboardButton(f"{stat}", callback_data=f"{cb}:{group_id}"),
-             InlineKeyboardButton("DELETE", callback_data=f"deletecb:{group_id}")],
-            [InlineKeyboardButton("BACK", callback_data="backcb")]
+             InlineKeyboardButton("❌ Delete", callback_data=f"deletecb:{group_id}")],
+            [InlineKeyboardButton("◀️ Back", callback_data="backcb")]
         ])
 
         await query.message.edit_text(
@@ -240,7 +240,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         if mkact:
             await query.message.edit_text(
-                f"Connected to **{title}**",
+                f"🌟 Connected to **{title}**",
                 parse_mode="md"
             )
         else:
@@ -260,7 +260,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         if mkinact:
             await query.message.edit_text(
-                f"Disconnected from **{title}**",
+                f"🌟 Disconnected from **{title}**",
                 parse_mode="md"
             )
         else:
@@ -279,7 +279,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         if delcon:
             await query.message.edit_text(
-                "Successfully deleted connection"
+                "✔️ Successfully deleted connection"
             )
         else:
             await query.message.edit_text(
@@ -295,7 +295,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         groupids = await all_connections(str(userid))
         if groupids is None:
             await query.message.edit_text(
-                "There are no active connections!! Connect to some groups first.",
+                "🎀 There are no active connections!! Connect to some groups first.",
             )
             return await query.answer('Piracy Is Crime')
         buttons = []
@@ -316,7 +316,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 pass
         if buttons:
             await query.message.edit_text(
-                "Your connected group details ;\n\n",
+                "🚦 Your connected group details ;\n\n",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
     elif "alertmessage" in query.data:
@@ -364,16 +364,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     caption=f_caption,
                     protect_content=True if ident == "filep" else False 
                 )
-                await query.answer('Check PM, I have sent files in pm', show_alert=True)
+                await query.answer('File ഞാൻ സ്വകാര്യമായി (PM) അയച്ചിട്ടുണ്ട്.... അവിടെ പോയി നോക്ക് ഫയൽ ഉണ്ട് 😜....', show_alert=True)
         except UserIsBlocked:
-            await query.answer('Unblock the bot mahn !', show_alert=True)
+            await query.answer('നീ എന്നെ BLOCK ആക്കി വച്ചിരിക്കുകയാണ്🤕..... എന്നെ UN-BLOCK ചെയ്താലേ നിനക്ക് പടം അയക്കാൻ കഴിയുകയുള്ളൂ🤐🤐.....', show_alert=True)
         except PeerIdInvalid:
             await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
         except Exception as e:
             await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
-            await query.answer("I Like Your Smartness, But Don't Be Oversmart 😒", show_alert=True)
+            await query.answer("എന്നോട് കളിക്കല്ലേ മോനെ😉... നീ ആദ്യം ജോയിൻ ചെയ്യ്.....", show_alert=True)
             return
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
