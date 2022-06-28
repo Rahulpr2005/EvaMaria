@@ -12,7 +12,7 @@ class script(object):
 ✯ <b>Build Status: v1.0.1 [BETA]</b>"""
     SOURCE_TXT = """<b>NOTE:</b>
 - Samantha is not a open source project. 
-- It will be open soon \n - Join @CP_Archivedmovies to be updated. 
+- It will be open soon... \n - Join @CP_Archivedmovies to be updated.... 
 
 <b>DEVS:</b>
 - <a href=https://t.me/rahulp_r>This Person</a>"""
@@ -97,11 +97,11 @@ This module only works for my admins
 ★ 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱
 ★ 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴: <code>{}</code> 𝙼𝚒𝙱"""
     LOG_TEXT_G = """#NewGroup
-Group = {}(<code>{}</code>)
-Total Members = <code>{}</code>
-Added By - {}
+📂 Group = {}(<code>{}</code>)
+👨‍👧‍👦 Total Members = <code>{}</code>
+👨‍🔧 Added By - {}
 """
     LOG_TEXT_P = """#NewUser
-ID - <code>{}</code>
-Name - {}
+🚧 ID - <code>{}</code>
+🙋‍♂️ Name - {}
 """
