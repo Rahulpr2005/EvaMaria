@@ -708,7 +708,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"Here is what i found for your query {search}"
+        cap = f"<b>എന്റെ മോനെ നീ ചോയ്ച്ച പടം ഞൻ കുറെ തപ്പി.... അവസാനം കിട്ടി ട്ടാ 😇....</b>"
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
@@ -764,7 +764,7 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply("I couldn't find anything related to that. Check your spelling")
+        k = await msg.reply("<b>എടാ ചെക്കാ, പടം കാണാനില്ലലോ 🤔 !! പടം റിലീസ് അയൊന്നു ഒന്നുടെ ചെക്ക് ചെയ്യൂ 🥱....</b>")
         await asyncio.sleep(8)
         await k.delete()
         return
