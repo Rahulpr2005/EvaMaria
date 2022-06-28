@@ -9,10 +9,10 @@ class script(object):
 ✯ <b>Language: Python 3</b>
 ✯ <b>Data Base: MONOGO DB</b>
 ✯ <b>Server: HEROKU</b>
-✯ <b>Build Status: v1.0.1 [BETA]</b>"""
+✯ <b>Build Status: v1.3.0 [STABLE]</b>"""
     SOURCE_TXT = """<b>NOTE:</b>
 - Samantha is not a open source project. 
-- It will be open soon... \n - Join @CP_Archivedmovies to be updated.... 
+- It will be open soon... \n- Join @CP_Archivedmovies to be updated.... 
 
 <b>DEVS:</b>
 - <a href=https://t.me/rahulp_r>This Person</a>"""
@@ -40,7 +40,7 @@ class script(object):
 3. Buttons should be properly parsed as markdown format
 
 <b>URL buttons:</b>
-<code>[Button Text](buttonurl:https://t.me/EvaMariaBot)</code>
+<code>[Button Text](buttonurl:https://t.me/CP_Archivedmovies)</code>
 
 <b>Alert buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
@@ -67,7 +67,7 @@ class script(object):
     EXTRAMOD_TXT = """Help: <b>Extra Modules</b>
 
 <b>NOTE:</b>
-these are the extra features of Eva Maria
+these are the extra features of Samantha 
 
 <b>Commands and Usage:</b>
 • /id - <code>get id of a specified user.</code>
